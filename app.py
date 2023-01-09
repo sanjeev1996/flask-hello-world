@@ -9,10 +9,11 @@ import requests
 app = Flask(__name__)
 
 
-#j
+
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def ticket_fields():
+    #return "hello"
+    return render_template('iframe.html')
 
 @app.route('/api', methods=["post"])
 def ticket_fields1():
