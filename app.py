@@ -11,9 +11,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def ticket_fields():
-    #return "hello"
-    return render_template('iframe.html')
+def hello_world():
+    return 'Hello, World!'
 
 @app.route('/api', methods=["post"])
 def ticket_fields1():
