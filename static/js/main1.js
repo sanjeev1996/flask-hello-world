@@ -11,7 +11,7 @@ $(function() {
       console.log("this");
 
       // const Url='https://paragraphlines.herokuapp.com/api';
-      const Url='http://127.0.0.1:5000/api';
+      const Url='https://render-example4.onrender.com/api';
       
         var text = document.getElementById("oldText").value
         var dict={}
