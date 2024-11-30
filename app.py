@@ -23,5 +23,15 @@ def character_counting2():
     text = len(text.strip())
     return str(text)
 
+@app.route('/case_capitalize')
+def case_capitalize1():
+    return render_template('case_capitalize.html')
+
+@app.route('/case_capitalize', methods=["post"])
+def case_capitalize2():
+    text = str(request.get_json()["text"])
+    text = text.capitalize()
+    return str(text)
+
 if __name__ == "__main__":
   app.run()
